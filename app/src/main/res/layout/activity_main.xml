@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tit1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="8dp"
+        android:text="1/1/2025: two api success one fail -> return true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/enter_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/1/2025 (no state)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tit1" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tit2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="8dp"
+        android:text="1/1/2025: two apis success one fail -> return false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/enter_button1" />
+
+    <Button
+        android:id="@+id/enter_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/1/2025 (state all)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tit2" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tit4"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="8dp"
+        android:text="1/1/2025: two apis success one fail -> return true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/enter_button2" />
+
+    <Button
+        android:id="@+id/enter_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1/1/2025 (state CONSENSUS)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tit4" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tit3"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="8dp"
+        android:text="10/1/2025: No holiday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/enter_button4" />
+
+    <Button
+        android:id="@+id/enter_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/1/2025"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tit3" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/result"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="8dp"
+        android:text="Result: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/enter_button3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
