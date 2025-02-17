@@ -7,98 +7,78 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_marginTop="20dp"
+        android:layout_margin="16dp"
         android:id="@+id/tit1"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:textSize="20sp"
         android:layout_marginHorizontal="8dp"
-        android:text="1/1/2025: two api success one fail -> return true"
+        android:text="Choose state:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <Button
-        android:id="@+id/enter_button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1/1/2025 (no state)"
-        app:layout_constraintEnd_toEndOf="parent"
+    <CheckBox
+        android:id="@+id/state1"
+        android:layout_marginHorizontal="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tit1" />
+        app:layout_constraintTop_toBottomOf="@id/tit1"
+        android:checked="true"
+        android:text="State ANY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/tit2"
+    <CheckBox
+        android:id="@+id/state2"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/state1"
+        android:text="State ALL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/state3"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/state2"
+        android:text="State CONSENSUS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_margin="16dp"
+        android:id="@+id/button"
+        app:layout_constraintTop_toBottomOf="@id/state3"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:textSize="20sp"
         android:layout_marginHorizontal="8dp"
-        android:text="1/1/2025: two apis success one fail -> return false"
+        android:text="Pick date"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/enter_button1" />
+        android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/enter_button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1/1/2025 (state all)"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tit2" />
-
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/tit4"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_margin="16dp"
+        android:id="@+id/text_tit"
+        app:layout_constraintTop_toBottomOf="@id/button"
         android:textColor="@color/black"
         android:textStyle="bold"
+        android:textSize="20sp"
         android:layout_marginHorizontal="8dp"
-        android:text="1/1/2025: two apis success one fail -> return true"
+        android:text="Result:"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/enter_button2" />
+        android:layout_height="wrap_content" />
 
-    <Button
-        android:id="@+id/enter_button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1/1/2025 (state CONSENSUS)"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tit4" />
-
-
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/tit3"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginHorizontal="8dp"
-        android:text="10/1/2025: No holiday"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/enter_button4" />
-
-    <Button
-        android:id="@+id/enter_button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10/1/2025"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tit3" />
-
-    <TextView
-        android:layout_marginTop="20dp"
-        android:id="@+id/result"
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_margin="16dp"
+        android:id="@+id/text_content"
+        app:layout_constraintTop_toBottomOf="@id/text_tit"
         android:textSize="18sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
         android:layout_marginHorizontal="8dp"
-        android:text="Result: "
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/enter_button3" />
-
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
