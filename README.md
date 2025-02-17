@@ -81,7 +81,7 @@ dependencies {
 
 ## 📲 Download Sample App
 - [APK](https://github.com/tuannq-0847/holidaysdk/releases/download/v1.0.0/app-debug.apk)
-- [Demo](https://github.com/user-attachments/assets/55775735-5b45-4f09-a824-5d92a3648cbe)
+- ![](https://github.com/user-attachments/assets/a3e952ad-802e-4d42-9bd8-893bc664e3c1)
 
 ## 🤝 Contributing
 
