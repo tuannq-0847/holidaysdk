@@ -23,7 +23,7 @@ import org.junit.Rule
 import org.junit.Test
 
 @ExperimentalCoroutinesApi
-class RepositoryTest {
+class HolidayHelperTest {
 
     @get:Rule
     val instantExecutorRule = InstantTaskExecutorRule()
