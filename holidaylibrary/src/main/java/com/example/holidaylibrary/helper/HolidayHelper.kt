@@ -8,11 +8,13 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 
 object HolidayHelper : HolidayChecker {
-    private val repository: HolidayCheckerRepository = HolidayCheckerRepositoryImpl(
-        ApiServiceWrapper.abstractApiService,
-        ApiServiceWrapper.holidayApi,
-        ApiServiceWrapper.calendarificSerivice
-    )
+    private val repository: HolidayCheckerRepository by lazy {
+        HolidayCheckerRepositoryImpl(
+            ApiServiceWrapper.abstractApiService,
+            ApiServiceWrapper.holidayApi,
+            ApiServiceWrapper.calendarificSerivice
+        )
+    }
 
     private var state = HolidayState.ANY
 
